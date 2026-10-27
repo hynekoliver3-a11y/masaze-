@@ -1,0 +1,265 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Mira Aromassage</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Lymfatické, komplexní, antistresové a havajské masáže Lomi Lomi na Starobrněnské v centru Brna.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: quiet pine-and-amber page, one aroma-oil drop as the only flourish; services as a menu with minutes, then reviews, then contact */
+:root{
+  --bg:#f3f5f1;        /* misted sage paper */
+  --surface:#ffffff;
+  --ink:#1d2a24;       /* pine */
+  --muted:#5b6a62;
+  --line:#d6ddd6;
+  --amber:#b8732a;     /* massage oil */
+  --pine:#2f4a3e;
+  --on-pine:#f3f5f1;
+  --display:"Gilda Display",Georgia,"Times New Roman",serif;
+  --body:"Figtree","Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141b18;--surface:#1b2420;--ink:#e6ece7;--muted:#9fb0a6;--line:#2c3933;--amber:#e0a05a;--pine:#22362d;--on-pine:#e6ece7;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141b18;--surface:#1b2420;--ink:#e6ece7;--muted:#9fb0a6;--line:#2c3933;--amber:#e0a05a;--pine:#22362d;--on-pine:#e6ece7;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.4rem)}
+p{margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.label{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--amber)}
+
+/* nav */
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px}
+.brand{font-family:var(--display);font-size:1.35rem;text-decoration:none}
+.brand span{color:var(--amber)}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+@media (max-width:620px){nav{display:none}}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:center;padding-block:72px 64px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero .lead{margin-top:20px;max-width:34rem;font-size:1.12rem;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:1px solid var(--pine)}
+.btn.primary{background:var(--pine);color:var(--on-pine)}
+.btn.ghost{color:var(--ink)}
+.btn:hover{filter:brightness(1.08)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:34px;color:var(--muted);font-size:.92rem}
+.facts b{color:var(--ink);font-weight:600}
+.drop{width:100%;max-width:260px;justify-self:center;aspect-ratio:3/4}
+@media (max-width:760px){.hero .wrap{grid-template-columns:1fr;padding-block:48px}.drop{display:none}}
+
+/* services */
+section{padding-block:72px}
+.svc-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:36px}
+.svc-head p{max-width:28rem;color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;border-top:1px solid var(--line)}
+.item{padding:26px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:6px 16px;min-width:0}
+.item h3{font-size:1.45rem}
+.item .price{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap;align-self:baseline}
+.item p{grid-column:1/-1;color:var(--muted);font-size:.97rem}
+.mins{grid-column:1/-1;display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.mins span{font-size:.8rem;font-variant-numeric:tabular-nums;border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--muted)}
+.note{margin-top:20px;font-size:.88rem;color:var(--muted)}
+@media (max-width:700px){.menu{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--pine);color:var(--on-pine)}
+.reviews .label{color:var(--amber)}
+.score{display:flex;align-items:baseline;gap:14px;margin-top:12px}
+.score strong{font-family:var(--display);font-size:clamp(3rem,8vw,4.5rem);font-weight:400;line-height:1}
+.score span{opacity:.8}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.quotes figure{margin:0;padding-top:18px;border-top:1px solid color-mix(in srgb,var(--on-pine) 25%,transparent)}
+.quotes blockquote{margin:0;font-family:var(--display);font-size:1.2rem;line-height:1.4}
+.quotes figcaption{margin-top:10px;font-size:.85rem;opacity:.75}
+@media (max-width:760px){.quotes{grid-template-columns:1fr}}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+dl{margin:20px 0 0;display:grid;grid-template-columns:auto 1fr;gap:12px 20px}
+dt{color:var(--muted);font-size:.9rem}
+dd{margin:0;font-weight:500;min-width:0}
+.phone{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.copy{font:inherit;font-size:.8rem;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:3px 10px;cursor:pointer}
+.hours{width:100%;border-collapse:collapse;margin-top:20px;font-variant-numeric:tabular-nums}
+.hours td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--amber);font-weight:600}
+@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">mira<span>·</span>aromassage</a>
+    <nav aria-label="Hlavní">
+      <a href="#masaze">Masáže</a>
+      <a href="#recenze">Recenze</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div>
+        <p class="label">Masáže · Starobrněnská, Brno</p>
+        <h1>Hodina klidu <em>v centru Brna</em></h1>
+        <p class="lead">Lymfatická, komplexní, antistresová a havajská masáž Lomi Lomi s aromatickými oleji. Masáž přizpůsobím tomu, co vás zrovna trápí, ať jsou to ztuhlá ramena, nebo únava.</p>
+        <div class="cta">
+          <a class="btn primary" href="tel:+420607678821">Objednat se: 607 678 821</a>
+          <a class="btn ghost" href="#masaze">Nabídka masáží</a>
+        </div>
+        <div class="facts">
+          <span><b>4,9 / 5</b> z 49 ověřených recenzí</span>
+          <span><b>Denně</b> 8:00–20:00</span>
+          <span><b>Brno-střed</b>, Starobrněnská 19</span>
+        </div>
+      </div>
+      <svg class="drop" viewBox="0 0 120 160" role="img" aria-label="Kapka aromatického oleje">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="var(--amber)" stop-opacity=".35"/>
+            <stop offset="1" stop-color="var(--amber)" stop-opacity=".95"/>
+          </linearGradient>
+        </defs>
+        <path d="M60 6 C60 6 18 66 18 100 a42 42 0 0 0 84 0 C102 66 60 6 60 6Z" fill="url(#g)"/>
+        <ellipse cx="44" cy="96" rx="7" ry="13" fill="var(--bg)" opacity=".45"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="masaze">
+    <div class="wrap">
+      <div class="svc-head">
+        <div>
+          <p class="label">Nabídka</p>
+          <h2>Masáže</h2>
+        </div>
+        <p>Délku si vyberete při objednání. Na začátku se krátce domluvíme, na co se zaměřit.</p>
+      </div>
+      <div class="menu">
+        <article class="item">
+          <h3>Lymfatická masáž</h3>
+          <span class="price">od 1 000 Kč</span>
+          <p>Jemné, rytmické tahy podpoří odtok lymfy. Pomáhá při otocích, těžkých nohou a únavě.</p>
+          <div class="mins"><span>45 min</span><span>60 min</span><span>90 min</span></div>
+        </article>
+        <article class="item">
+          <h3>Komplexní masáž</h3>
+          <span class="price">od 1 000 Kč</span>
+          <p>Hloubková masáž zad, šíje a nohou. Uvolní ztuhlé svaly a uleví od bolesti ramen.</p>
+          <div class="mins"><span>45 min</span><span>60 min</span><span>90 min</span></div>
+        </article>
+        <article class="item">
+          <h3>Antistresová masáž</h3>
+          <span class="price">od 1 200 Kč</span>
+          <p>Pomalá relaxační masáž celého těla s vonným olejem, při tiché hudbě.</p>
+          <div class="mins"><span>60 min</span><span>90 min</span></div>
+        </article>
+        <article class="item">
+          <h3>Havajská masáž Lomi Lomi</h3>
+          <span class="price">od 1 200 Kč</span>
+          <p>Plynulé dlouhé tahy předloktím, které působí jako vlny. Hluboké uvolnění těla i hlavy.</p>
+          <div class="mins"><span>60 min</span><span>90 min</span></div>
+        </article>
+      </div>
+      <p class="note">Ceny jsou orientační, přesnou cenu podle délky masáže vám řeknu při objednání. Masáž je skvělý dárek, poukaz připravím na přání.</p>
+    </div>
+  </section>
+
+  <section class="reviews" id="recenze">
+    <div class="wrap">
+      <p class="label">Recenze</p>
+      <div class="score"><strong>4,9</strong><span>z 5 · 49 ověřených hodnocení na Slevomatu</span></div>
+      <div class="quotes">
+        <figure>
+          <blockquote>Paní masérka má zlaté ruce a talent. Určitě rád opět přijdu.</blockquote>
+          <figcaption>Miroslav</figcaption>
+        </figure>
+        <figure>
+          <blockquote>Masáž mi pomáhá od bolesti ramene. Doporučuji.</blockquote>
+          <figcaption>Ověřený zákazník</figcaption>
+        </figure>
+        <figure>
+          <blockquote>Salon voňavý, čistý, hrála relaxační hudba. Spokojenost.</blockquote>
+          <figcaption>Petr</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <div>
+        <p class="label">Kontakt</p>
+        <h2>Objednejte se telefonem</h2>
+        <dl>
+          <dt>Telefon</dt>
+          <dd class="phone"><span id="tel">+420 607 678 821</span><button class="copy" id="copy-tel" type="button">Kopírovat</button></dd>
+          <dt>Adresa</dt>
+          <dd>Starobrněnská 282/19<br>602 00 Brno-střed</dd>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/mira.masaze.brno" target="_blank" rel="noopener">@mira.masaze.brno</a></dd>
+          <dt>Mapa</dt>
+          <dd><a href="https://www.google.com/maps/search/?api=1&query=Starobrn%C4%9Bnsk%C3%A1+19+Brno" target="_blank" rel="noopener">Navigovat</a></dd>
+        </dl>
+        <p class="note">Salon nemá vlastní parkování a prostor není bezbariérový.</p>
+      </div>
+      <div class="card">
+        <p class="label">Otevírací doba</p>
+        <table class="hours" id="hours">
+          <tbody>
+            <tr data-d="1"><td>Pondělí</td><td>8:00–20:00</td></tr>
+            <tr data-d="2"><td>Úterý</td><td>8:00–20:00</td></tr>
+            <tr data-d="3"><td>Středa</td><td>8:00–20:00</td></tr>
+            <tr data-d="4"><td>Čtvrtek</td><td>8:00–20:00</td></tr>
+            <tr data-d="5"><td>Pátek</td><td>8:00–20:00</td></tr>
+            <tr data-d="6"><td>Sobota</td><td>8:00–20:00</td></tr>
+            <tr data-d="0"><td>Neděle</td><td>8:00–20:00</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Ve státní svátky zavřeno.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Mira Aromassage · Starobrněnská 19, Brno</span>
+    <span>+420 607 678 821</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d=new Date().getDay();
+  var row=document.querySelector('#hours tr[data-d="'+d+'"]');
+  if(row){row.classList.add('today');}
+  var btn=document.getElementById('copy-tel');
+  btn.addEventListener('click',function(){
+    var t=document.getElementById('tel').textContent;
+    function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('tel'));var s=getSelection();s.removeAllRanges();s.addRange(r);}
+    try{navigator.clipboard.writeText(t).then(function(){btn.textContent='Zkopírováno';},sel);}catch(e){sel();}
+  });
+})();
+</script>
+
+</body></html>
